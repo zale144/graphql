@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/graphql-go/graphql/language/ast"
+	"github.com/zale144/graphql/language/ast"
 )
 
 // As per the GraphQL Spec, Integers are only treated as valid when a valid
@@ -330,6 +330,18 @@ var String = NewScalar(ScalarConfig{
 		return nil
 	},
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 func coerceBool(value interface{}) interface{} {
 	switch value := value.(type) {
